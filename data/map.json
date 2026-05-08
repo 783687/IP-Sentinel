@@ -123,6 +123,23 @@
             } 
           ] 
         },
+        { 
+          "id": "ID", 
+          "name": "Indonesia (印度尼西亚)", 
+          "keyword_file": "kw_ID.txt", 
+          "states": [
+            { 
+              "id": "Default", 
+              "name": "Default State", 
+              "cities": [
+                { 
+                  "id": "Jakarta", 
+                  "name": "Jakarta (雅加达)" 
+                } 
+              ] 
+            } 
+          ] 
+        },
         {
           "id": "KR",
           "name": "South Korea (韩国)",
