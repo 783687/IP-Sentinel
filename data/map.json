@@ -89,6 +89,23 @@
             } 
           ] 
         },
+        { 
+          "id": "MM", 
+          "name": "Myanmar (缅甸)", 
+          "keyword_file": "kw_MM.txt", 
+          "states": [
+            { 
+              "id": "Default", 
+              "name": "Default State", 
+              "cities": [
+                { 
+                  "id": "Yangon", 
+                  "name": "Yangon (仰光)" 
+                } 
+              ] 
+            } 
+          ] 
+        },
         {
           "id": "KR",
           "name": "South Korea (韩国)",
