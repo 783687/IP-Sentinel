@@ -554,6 +554,16 @@
               ]
             },
             {
+              "id": "Hawaii",
+              "name": "Hawaii",
+              "cities": [
+                { 
+                  "id": "Honolulu", 
+                  "name": "Honolulu (檀香山)" 
+                }
+              ]
+            },
+            {
               "id": "GA",
               "name": "Georgia (佐治亚州)",
               "cities": [
