@@ -289,6 +289,9 @@ while true; do
                         if [ "$IS_OFFICIAL_GATEWAY" != "true" ] && [ "${ENABLE_MASTER_OTA:-false}" == "true" ]; then
                             BTN_MASTER_OTA="[{\"text\":\"🆙 升级控制中枢至 v${REMOTE_VER}\",\"callback_data\":\"master_ota_confirm\"}],"
                         fi
+                    elif [ -n "$REMOTE_VER" ] && [ "$REMOTE_VER" == "$MASTER_VERSION" ]; then
+                        # [UI 体验升级] 若检测到版本一致，明确提示用户已是最新
+                        VER_INFO="${VER_INFO}\n✨ **最新官方版本**: \`v${REMOTE_VER}\` (✅已是最新)"
                     fi
 
                     NODE_COUNT=$(db_exec "SELECT COUNT(*) FROM nodes WHERE chat_id='$CHAT_ID';")
